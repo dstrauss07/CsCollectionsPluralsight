@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Countries_Module2
 {
@@ -10,8 +11,11 @@ namespace Countries_Module2
 
             CsvReader reader = new CsvReader(filePath);
 
-            Country[] countries = reader.ReadFirstNCountries(10);
-
+            List<Country> countries = reader.ReadAllCountries();
+            Country lilliput = new Country("Lilliput", "LIL", "Somewhere", 2000000);
+            int lilliputIndex = countries.FindIndex(x => x.population < 2000000);
+            countries.Insert(lilliputIndex, lilliput);
+            countries.RemoveAt(lilliputIndex);
             foreach (Country country in countries)
             {
                 Console.WriteLine($"{country.population}: {country.name}");
