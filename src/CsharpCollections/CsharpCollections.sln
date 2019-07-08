@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpCollections", "Csharp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries-Module2", "Countries-Module2\Countries-Module2.csproj", "{13DE4D08-923B-4379-9489-CDDCBEF63B5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoughtsAndCrosses", "NoughtsAndCrosses\NoughtsAndCrosses.csproj", "{A237149F-DFC5-4B6C-B30F-AAAF3C8EDB9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{13DE4D08-923B-4379-9489-CDDCBEF63B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13DE4D08-923B-4379-9489-CDDCBEF63B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13DE4D08-923B-4379-9489-CDDCBEF63B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A237149F-DFC5-4B6C-B30F-AAAF3C8EDB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A237149F-DFC5-4B6C-B30F-AAAF3C8EDB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A237149F-DFC5-4B6C-B30F-AAAF3C8EDB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A237149F-DFC5-4B6C-B30F-AAAF3C8EDB9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
