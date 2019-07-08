@@ -11,15 +11,22 @@ namespace Countries_Module2
 
             CsvReader reader = new CsvReader(filePath);
 
-            List<Country> countries = reader.ReadAllCountries();
-            Country lilliput = new Country("Lilliput", "LIL", "Somewhere", 2000000);
-            int lilliputIndex = countries.FindIndex(x => x.population < 2000000);
-            countries.Insert(lilliputIndex, lilliput);
-            countries.RemoveAt(lilliputIndex);
-            foreach (Country country in countries)
+            Dictionary<string, Country> countries = reader.ReadAllCountries();
+            //Country lilliput = new Country("Lilliput", "LIL", "Somewhere", 2000000);
+            //int lilliputIndex = countries.FindIndex(x => x.population < 2000000);
+            //countries.Insert(lilliputIndex, lilliput);
+            //countries.RemoveAt(lilliputIndex);
+
+            string userInput = Console.ReadLine();
+
+            bool gotCountry = countries.TryGetValue(userInput, out Country country);
+            if(!gotCountry)
             {
-                Console.WriteLine($"{country.population}: {country.name}");
+                Console.WriteLine($"Sorry, there is no country with code, {userInput}");
             }
+            else
+                 Console.WriteLine($"{country.name} has population {country.population}");
+            
         }
     }
 }
